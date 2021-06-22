@@ -1,0 +1,264 @@
+div.main {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background: radial-gradient(123.67% 148.71% at -10.38% 126.06%,
+    rgba(21, 50, 119, 0.6) 0%, rgba(27, 113, 172, 0) 100%),
+  radial-gradient(111.77% 286.13% at 80.42% -12%, rgba(73, 210, 255, 0.71) 0%,
+      rgba(19, 108, 167, 0) 100%),
+  linear-gradient(64.88deg, #153276 0%, #12AADC 122.02%);
+}
+
+div.rect2 {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  top: -45%;
+  left: -12%;
+
+  transform: rotate(55deg);
+
+  background: rgba(20, 105, 166, 1) linear-gradient(95.56deg, #1469A6 17.49%,
+    rgba(20, 105, 166, 0) 80.45%);
+}
+
+div.rect3 {
+  position: relative;
+  width: 34%;
+  height: 100%;
+  top: -180%;
+  left: -12.5%;
+
+  background: linear-gradient(81.52deg, #136AAD 10.86%,
+    rgba(20, 102, 166, 0) 93.87%);
+  transform: rotate(235deg);
+}
+
+div.rect4 {
+  position: relative;
+  width: 55%;
+  height: 250%;
+  top: -220%;
+  left: 39%;
+
+  background: linear-gradient(90.08deg, rgba(39, 170, 240, 0.4) 9.17%, rgba(20, 87, 153, 0) 54.26%);
+  transform: rotate(55deg);
+}
+
+div.rect5 {
+  position: relative;
+  width: 55%;
+  height: 250%;
+  top: -470%;
+  left: 42%;
+
+  background: linear-gradient(90.37deg, rgba(39, 170, 240, 0.4) 6.91%, rgba(20, 95, 159, 0) 67.3%);
+  transform: rotate(55deg);
+
+}
+
+div.rect6 {
+  position: relative;
+  width: 45%;
+  height: 140%;
+  top: -670%;
+  left: 57%;
+
+  background: linear-gradient(89.99deg, rgba(39, 170, 240, 0.4) 1.12%, rgba(39, 170, 240, 0) 65.12%);
+  transform: rotate(55deg);
+
+}
+
+div.rect7 {
+  position: relative;
+  width: 45%;
+  height: 140%;
+  top: -801%;
+  left: 55%;
+
+  background: linear-gradient(100.79deg, rgba(40, 160, 224, 0.4) 18.5%, rgba(39, 170, 240, 0) 46.67%);
+  transform: rotate(55deg);
+}
+
+section {
+  position: absolute;
+  width: 36.1%;
+  height: 30.1%;
+  top: 29.3%;
+  left: 13.9%;
+}
+
+div.well {
+  display: flex;
+  align-items: center;
+
+  color: rgba(255, 255, 255, 0.34);
+
+  font-size: 48px;
+  font-weight: 300;
+
+  position: relative;
+  width: 100%;
+  height: 25.9%;
+  margin-bottom: 4.6%;
+}
+
+div.skill {
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+  font-size: 72px;
+  letter-spacing: 5px;
+  font-weight: 500;
+
+  position: relative;
+  width: 100%;
+  height: 25.9%;
+  margin-bottom: 7.2%;
+}
+
+div.text {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 19.4%;
+
+  color: rgba(255, 255, 255, 0.74);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: absolute;
+  width: 12%;
+  top: 8.9%;
+  left: 58%;
+  height: 14.7%;
+}
+
+.auth-block {
+  position: absolute;
+  width: 30.6%;
+  height: 100%;
+  background: #ffffff;
+  left: 69.4%;
+}
+
+a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.active{
+  color: black;
+}
+
+.div-active{
+  background: #FFFFFF;
+}
+
+.link {
+  display: flex;
+  height: 37%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+@media (max-width: 780px){
+  div.well{
+    font-size: 32px;
+  }
+  div.skill{
+    font-size: 48px;
+  }
+  div.text{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    width: 300px;
+  }
+  a{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 530px){
+  div.main{
+    height: 50%;
+  }
+  div.well{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    height: 36px;
+  }
+  div.skill{
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  div.text{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    width: 80%;
+    height: 90px;
+  }
+  a{
+    font-size: 14px;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+    top: 14.53%;
+    left: 0%;
+    justify-content: center;
+    width: 100%;
+  }
+  section div{
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
+ nav{
+   position: absolute;
+   display: flex;
+   flex-direction: row;
+   width: 80%;
+   top: 3%;
+   height: 6%;
+   left: 20%;
+   justify-content: normal;
+ }
+  .auth-block {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: #ffffff;
+    top: 50%;
+    left: 0%;
+  }
+  .active{
+    color: rgba(39, 170, 240, 1);
+  }
+
+  nav{
+    left: 45%;
+  }
+  div.link{
+    margin-right: 10px;
+    width: 90px;
+  }
+}

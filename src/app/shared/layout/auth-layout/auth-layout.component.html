@@ -1,0 +1,51 @@
+<div class="main">
+  <div class="rect2"></div>
+  <div class="rect3"></div>
+  <div class="rect4"></div>
+  <div class="rect5"></div>
+  <div class="rect6"></div>
+  <div class="rect7"></div>
+</div>
+
+<section>
+  <div class="well normal">
+    Welcome to
+  </div>
+  <div class="skill normal">
+    Skill++
+  </div>
+  <div class="text normal">
+    Curiosity is one of the permanent and certain characteristics of a vigorous mind.
+  </div>
+</section>
+
+<nav>
+  <div
+    class="link"
+    [ngClass]="{'div-active': rla1.isActive}"
+  >
+      <a [routerLink]="['/login']"
+         #rla1 = "routerLinkActive"
+         routerLinkActive="active"
+         class="normal"
+      >
+        LOGIN
+      </a>
+  </div>
+  <div
+    class="link"
+    [ngClass]="{'div-active': rla2.isActive}"
+  >
+      <a [routerLink]="['/register']"
+         #rla2 = "routerLinkActive"
+         routerLinkActive="active"
+         class="normal"
+      >
+        REGISTER
+      </a>
+  </div>
+</nav>
+
+<div class="auth-block">
+  <router-outlet></router-outlet>
+</div>
