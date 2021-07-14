@@ -1,39 +1,42 @@
 <main>
   <div class="logo">
     <img
-      src="assets/image/img.svg"
-      width="100%"
+      class="logo"
+      src="assets/image/img.svg" alt=""
+      width="25%"
       height="100%"
     >
   </div>
   <div class="text medium">
-    LOGIN
+    <h2>LOGIN</h2>
   </div>
-  <div class="contact-form-log">
-    <div class="login">
-      <img src="assets/image/user.svg">
-      <input type="text"
-        class="normal"
-        placeholder="Username">
-    </div>
-    <span class="normal">Up to 40 symbols</span>
-  </div>
-  <div class="contact-form-pass">
-    <div class="login">
-      <img src="assets/image/key.svg">
-      <input type="text"
-        class="normal"
-        placeholder="Password">
-    </div>
-    <span class="normal">8 symbols or more</span>
-  </div>
-  <button class="normal"><img src="assets/image/login.svg"
-     class="btn"
-  >
-    LOGIN
-  </button>
-  <div class="check">
-    <input type="checkbox"><small class="normal">Remember me</small>
+  <div class="include">
+    <form [formGroup]="form"
+    (ngSubmit)="onSubmit()"
+    >
+      <app-input
+        type="email"
+        image="assets/image/avatarGrey.svg"
+        text="Up to 40 symbols"
+        [control]="form.get('email')"
+        placeHolder="Username">
+      </app-input>
+      <app-input
+        type="password"
+        image="assets/image/key.svg"
+        text="8 symbols or more"
+        [control]="form.get('password')"
+        placeHolder="Password">
+      </app-input>
+      <app-button
+        image="assets/image/login.svg"
+        text="LOGIN"
+        [stage]="form.invalid || form.disabled"
+        type="submit">
+      </app-button>
+      <app-check-box
+        text="Remember me">
+      </app-check-box>
+    </form>
   </div>
 </main>
-

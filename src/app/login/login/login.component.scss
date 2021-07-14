@@ -1,142 +1,51 @@
-main{
-  position: absolute;
+@import "src/sass/abstracts/var";
+
+main {
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  width: 100%;
-
-  background: #FFFFFF;
 }
 
-div.logo{
-  position: absolute;
-  width: 22.3%;
-  height: 6.7%;
-  top: 4%;
-  left: 66.8%;
-}
-
-div.text{
+div.logo {
   display: flex;
-  align-items: center;
-
-  color: #27AAF0;
-  font-size: 24px;
-
-  position: absolute;
-  width: 17.5%;
-  height: 4%;
-  top: 28.9%;
-  left: 10.9%;
-}
-
-div.contact-form-log{
-  position: absolute;
-  width: 78.2%;
-  height: 8%;
-  top: 37.3%;
-  left: 10.9%;
-}
-
-div.login{
-  padding-left: 6px;
-  display: flex;
-  align-items: center;
-
-  position: relative;
-  width: 100%;
-  height: 77.8%;
-  border-bottom: 1px solid rgba(49, 49, 49, 0.6);
-}
-
-div.contact-form-pass{
-  position: absolute;
-  width: 78.2%;
-  height: 8%;
-  top: 48.9%;
-  left: 10.9%;
-}
-
-input[type=text]{
-  width: 100%;
-  border: none;
-  font-size: 16px;
-  color: rgba(49, 49, 49, 0.6);
-}
-
-
-span{
-  color: rgba(49, 49, 49, 0.73);
-  font-size: 12px;
-  margin-left: 7px;
-}
-
-button{
-  position: absolute;
-  width: 78.2%;
-  height: 5.3%;
-  top: 61.3%;
-  left: 10.9%;
-  font-size: 18px;
-  color: #FFFFFF;
-  letter-spacing: 1px;
-  background-color: #27AAF0;
-  border-radius: 20px;
-  border: none;
-}
-
-img{
-  margin-right: 5px;
-}
-
-button img{
-vertical-align: middle;
-}
-
-div.check{
-  display: flex;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
 
-
-  position: absolute;
   width: 100%;
-  height: 5.3%;
-  top: 68.4%;
-  //left: 56.6%;
+  height: 16%;
+
+  img {
+    margin-right: 22px;
+  }
 }
 
-small{
-  color: rgba(0, 0, 0, 1);
-  font-size: 16px;
-  margin-right: 44px;
+div.text {
+  color: #27AAF0;
+  font-size: 20px;
+  margin-left: 10%;
+  margin-top: 25%;
 }
 
-input[type=checkbox]{
-  margin-right: 10px;
-  width: 24px;
-  height: 24px;
+div.include {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 15%;
+  width: 80%;
+  height: 30%;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
-@media (max-width: 530px){
-  div.logo, div.text{
+@media (max-width: 530px) {
+  div.logo, div.text {
     display: none;
   }
-  div.contact-form-log{
-    top: 15.15%;
-  }
-  div.contact-form-pass{
-    top: 39.2%;
-  }
-  button{
-    top: 64.8%;
-    height: 9.9%;
-  }
-  div.check{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    top: 78.6%;
-  }
 
+  div.include {
+    margin-top: 5px;
+    height: 70%;
+  }
 }
 
 

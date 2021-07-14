@@ -1,22 +1,49 @@
-
 @import url("https://fonts.googleapis.com/css?family=Quicksand:regular,medium,semi-bold,300,400,500,bold,light&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular&display=swap");
+@import "sass/abstracts/var";
+@import "assets/projectFonts/style.css";
 
-body{
+body, html{
   margin: 0px;
-  pading: 0ph;
-}
-
-.medium{
-  font-family: "Quicksand";
-  font-weight: bold;
-  font-style: initial;
-}
-
-.normal{
+  pading: 0px;
   font-family: "Quicksand";
   font-size: 18px;
   font-weight: normal;
-  font-style: normal;
   color: black;
 }
+
+h1, h2 {
+  font-weight: 600;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  border-bottom: $col-bottom solid 1px;
+}
+
+h4 {
+  margin: 0px;
+  pading: 0px;
+  font-family: "Quicksand";
+  font-size: 12px;
+  font-weight: normal;
+  color: $col-light;
+}
+
+.medium {
+  font-family: 'Quicksand';
+  font-size: 14px;
+  font-weight: bold;
+  color: $col-medium;
+}
+
+a {
+  text-decoration: none;
+}
+
+

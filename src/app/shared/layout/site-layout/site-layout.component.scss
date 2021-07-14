@@ -1,0 +1,113 @@
+@import "src/sass/abstracts/_var.scss";
+
+article {
+  height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+aside, main {
+  border: solid 3px rgba(255, 255, 255, 1);
+}
+
+aside {
+  position: sticky;
+  top: 0px;
+  height: 100%;
+  width: 320px;
+}
+
+main {
+  height: 2072px;
+  width: 100%;
+}
+
+li.menu-logo {
+  display: flex;
+  align-items: center;
+
+  flex-wrap: nowrap;
+  height: 42px;
+  .name {
+    margin-left: 14px;
+    color: $col-light;
+    font-size: 14px;
+  }
+}
+
+img {
+  margin-left: 20px;
+  &.point {
+    cursor: pointer;
+  }
+}
+
+div.avatar-fon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $col-blue;
+  height: 32px;
+  width: 32px!important;
+  border-radius: 100%;
+  margin-left: 14px;
+}
+
+
+
+a {
+  color: $col-light;
+  font-size: 14px;
+  border: none;
+  &:hover {
+    background-color: $col-hover;
+  }
+}
+
+.active {
+  background-color: $col-active;
+  color: $col-w;
+  &:hover {
+    background-color: $col-active;
+  }
+}
+
+.avatar {
+  margin-left: 3%;
+}
+
+div.none {
+  border-bottom: none;
+}
+
+.link {
+  height: 40px;
+
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  margin-left: 0px;
+  padding-left: 7px;
+  height: 42px;
+}
+
+span {
+  height: 23px;
+  width: 23px;
+  margin: 20px 20px 20px 10px;
+  font-size: 20px;
+}
+
+
+
+
+
+

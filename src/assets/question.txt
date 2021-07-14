@@ -1,0 +1,17 @@
+1. how to filtered tasks related with me? Can I view some window all tasks assigned on me?
+
+2. which event is triggering "change class" on progress field? 4934
+
+  -- graph-status-bar.component.scss  __wrapper
+
+3. can I use construction like this:
+
+  -- .graph-status-bar(class=authenticated ? 'authed' : 'anon')
+
+4. how should I named my branch on gitLab?
+
+5. about next task 4639
+==================================================
+6. '[ngClass]'=`{separator: item.sameColor, empty: item.quantity === 0}`   ?????????????????
+
+

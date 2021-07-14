@@ -1,0 +1,42 @@
+<aside>
+  <ul>
+    <li>
+      <h4>VIEW</h4>
+      <div class="center link">
+        <a *ngFor="let icon of icons"
+           [ngClass]="[icon.class]"
+           class="icons center">
+          <span class="" [class]="icon.src"></span>
+          <div></div>
+        </a>
+      </div>
+    </li>
+    <li>
+      <h4>ACTIONS</h4>
+        <a class="center"
+           routerLink="/article/new"
+           routerLinkActive="active">
+          <span class="icon-createPost"></span>
+          <div>Create post</div>
+        </a>
+    </li>
+    <li>
+      <h4>CATEGORIES</h4>
+        <button *ngFor="let tag of categories"
+                (click)="tag.filter()"
+           class="center">
+          <span [class]="tag.src"></span>
+          <div>{{tag.text}}</div>
+        </button>
+    </li>
+    <li>
+      <h4>FILTERS</h4>
+      <button *ngFor="let btn of filters"
+        (click)="btn.throwPipe()"
+        class="center">
+        <span [class]="btn.src"></span>
+        <div>{{btn.text}}</div>
+      </button>
+    </li>
+  </ul>
+</aside>

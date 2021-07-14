@@ -1,1 +1,48 @@
-<p>feed-page works!</p>
+
+  <div
+    *ngIf="articles$ | async as articles; else loader">
+    <div *ngIf="articles.length; else empty">
+      <div class="container"
+           *ngFor="let article of articles">
+        <img [src]="[source+article.img.url]"
+             height="100%"
+             width="35%"
+             alt="">
+        <div class="content">
+          <div class="tags">
+              <span>script</span>
+              <span>goooooooooooo</span>
+          </div>
+          <h2>{{article.title}}</h2>
+          <p>
+            {{article.text}}
+          </p>
+          <div class="tags details">
+            <div class="tags inline">
+              <div class="img">
+                <img
+                  width="25px"
+                  height="25px"
+                  [src]="[source+article.img.url]" alt="">
+              </div>
+              <div class="content medium">
+                {{article.author?.Firstname?.toUpperCase()}} {{article.author?.Surname?.toUpperCase()}}
+              </div>
+            </div>
+            <div class="tags inline">
+              <span class="icon-heart like"></span>
+              <small class="like">147</small>
+              <small class="like">|</small>
+              <span class="icon-star like"></span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ng-template #empty>You have no data</ng-template>
+  </div>
+
+  <ng-template #loader>
+    <div class="center">data is loading ...</div>
+  </ng-template>

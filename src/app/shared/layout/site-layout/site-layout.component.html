@@ -1,1 +1,41 @@
-<p >site-layout works!</p>
+<article>
+  <aside>
+    <ul>
+      <li class="menu-logo">
+        <img (click)="openMenu()"
+             class="point"
+             src="assets/image/menu.svg"
+             height="15px"
+             width="20px"
+             alt="menu">
+        <img src="assets/image/img.svg"
+             class="name"
+             height="100%"
+             width="45%"
+             alt="">
+      </li>
+      <li class="menu-logo">
+        <div class="avatar-fon">
+          <img class="avatar"
+               src="assets/image/avatar.svg" alt="">
+        </div>
+        <div class="name">{{name}}</div>
+      </li>
+      <li>
+        <a *ngFor="let link of links"
+           class="center"
+           [routerLink]="[link.url]"
+           routerLinkActive="active">
+          <span [class]="link.src"></span>
+          <div>{{link.name}}</div>
+        </a>
+      </li>
+    </ul>
+      <section [ngSwitch]="currentRout">
+        <app-side-bar *ngSwitchCase="'/feed'"></app-side-bar>
+      </section>
+  </aside>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</article>

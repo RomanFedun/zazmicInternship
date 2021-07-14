@@ -1,11 +1,11 @@
+@import "../../../sass/abstracts/var";
+
 div.main {
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
-
   position: absolute;
   width: 100%;
   height: 100%;
-
   background: radial-gradient(123.67% 148.71% at -10.38% 126.06%,
     rgba(21, 50, 119, 0.6) 0%, rgba(27, 113, 172, 0) 100%),
   radial-gradient(111.77% 286.13% at 80.42% -12%, rgba(73, 210, 255, 0.71) 0%,
@@ -19,9 +19,7 @@ div.rect2 {
   height: 100%;
   top: -45%;
   left: -12%;
-
   transform: rotate(55deg);
-
   background: rgba(20, 105, 166, 1) linear-gradient(95.56deg, #1469A6 17.49%,
     rgba(20, 105, 166, 0) 80.45%);
 }
@@ -32,7 +30,6 @@ div.rect3 {
   height: 100%;
   top: -180%;
   left: -12.5%;
-
   background: linear-gradient(81.52deg, #136AAD 10.86%,
     rgba(20, 102, 166, 0) 93.87%);
   transform: rotate(235deg);
@@ -55,7 +52,6 @@ div.rect5 {
   height: 250%;
   top: -470%;
   left: 42%;
-
   background: linear-gradient(90.37deg, rgba(39, 170, 240, 0.4) 6.91%, rgba(20, 95, 159, 0) 67.3%);
   transform: rotate(55deg);
 
@@ -67,10 +63,8 @@ div.rect6 {
   height: 140%;
   top: -670%;
   left: 57%;
-
   background: linear-gradient(89.99deg, rgba(39, 170, 240, 0.4) 1.12%, rgba(39, 170, 240, 0) 65.12%);
   transform: rotate(55deg);
-
 }
 
 div.rect7 {
@@ -79,13 +73,12 @@ div.rect7 {
   height: 140%;
   top: -801%;
   left: 55%;
-
   background: linear-gradient(100.79deg, rgba(40, 160, 224, 0.4) 18.5%, rgba(39, 170, 240, 0) 46.67%);
   transform: rotate(55deg);
 }
 
 section {
-  position: absolute;
+  position: fixed;
   width: 36.1%;
   height: 30.1%;
   top: 29.3%;
@@ -97,17 +90,15 @@ div.well {
   align-items: center;
 
   color: rgba(255, 255, 255, 0.34);
-
   font-size: 48px;
   font-weight: 300;
-
   position: relative;
   width: 100%;
   height: 25.9%;
   margin-bottom: 4.6%;
 }
 
-div.skill {
+h1.skill {
   display: flex;
   align-items: center;
 
@@ -115,7 +106,6 @@ div.skill {
   font-size: 72px;
   letter-spacing: 5px;
   font-weight: 500;
-
   position: relative;
   width: 100%;
   height: 25.9%;
@@ -128,7 +118,6 @@ div.text {
   position: relative;
   width: 100%;
   height: 19.4%;
-
   color: rgba(255, 255, 255, 0.74);
 }
 
@@ -137,7 +126,7 @@ nav {
   flex-direction: column;
   justify-content: space-between;
 
-  position: absolute;
+  position: fixed;
   width: 12%;
   top: 8.9%;
   left: 58%;
@@ -145,7 +134,7 @@ nav {
 }
 
 .auth-block {
-  position: absolute;
+  position: fixed;
   width: 30.6%;
   height: 100%;
   background: #ffffff;
@@ -155,7 +144,6 @@ nav {
 a {
   color: white;
   font-size: 20px;
-  text-decoration: none;
 }
 
 .active{
@@ -168,9 +156,9 @@ a {
 
 .link {
   display: flex;
+  align-items: center;
   height: 37%;
   justify-content: center;
-  align-items: center;
   border-radius: 8px;
 }
 
@@ -178,15 +166,19 @@ a {
   div.well{
     font-size: 32px;
   }
-  div.skill{
+
+  .skill{
     font-size: 48px;
   }
+
   div.text{
     display: flex;
     justify-content: center;
+
     font-size: 14px;
     width: 300px;
   }
+
   a{
     font-size: 14px;
   }
@@ -196,56 +188,70 @@ a {
   div.main{
     height: 50%;
   }
+
   div.well{
     display: flex;
     justify-content: center;
+
     font-size: 24px;
     height: 36px;
   }
-  div.skill{
+
+  .skill{
     display: flex;
     justify-content: center;
+
     font-size: 42px;
-    font-weight: 500;
     margin-bottom: 0;
   }
+
   div.text{
     display: flex;
     justify-content: center;
+    text-align: center;
     font-size: 14px;
     width: 80%;
     height: 90px;
   }
+
   a{
     font-size: 14px;
   }
+
   section{
     display: flex;
+    justify-content: center;
     flex-direction: column;
+
     top: 14.53%;
     left: 0;
-    justify-content: center;
     width: 100%;
   }
+
   section div{
     display: flex;
-    text-align: center;
+    justify-content: center;
+
     width: 100%;
   }
 
  nav{
-   position: absolute;
    display: flex;
+   justify-content: normal;
    flex-direction: row;
+
    width: 55%;
    top: 3%;
    height: 6%;
-   justify-content: normal;
    left: 45%;
  }
 
+  nav div{
+    height: 70%;
+    border-radius: 25px;
+  }
+
   .auth-block {
-    position: absolute;
     width: 100%;
     height: 50%;
     background: #ffffff;
@@ -254,7 +260,7 @@ a {
   }
 
   .active{
-    color: rgba(39, 170, 240, 1);
+    color: $col-m-active;
   }
 
   div.link{

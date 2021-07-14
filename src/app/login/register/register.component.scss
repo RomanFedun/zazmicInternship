@@ -1,0 +1,46 @@
+main {
+  height: 100%;
+}
+
+div.logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 100%;
+  height: 16%;
+
+  img {
+    margin-right: 22px;
+  }
+}
+
+div.text {
+  color: #27AAF0;
+  font-size: 20px;
+  margin-left: 10%;
+  margin-top: 25%;
+}
+
+div.include {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 15%;
+  width: 80%;
+  height: 36%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+@media (max-width: 530px) {
+  div.logo, div.text {
+    display: none;
+  }
+
+  div.include {
+    height: 75%;
+    margin-top: 8%;
+  }
+}
+
