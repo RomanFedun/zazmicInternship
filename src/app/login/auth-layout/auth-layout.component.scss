@@ -41,7 +41,6 @@ div.rect4 {
   height: 250%;
   top: -220%;
   left: 39%;
-
   background: linear-gradient(90.08deg, rgba(39, 170, 240, 0.4) 9.17%, rgba(20, 87, 153, 0) 54.26%);
   transform: rotate(55deg);
 }
@@ -88,7 +87,6 @@ section {
 div.well {
   display: flex;
   align-items: center;
-
   color: rgba(255, 255, 255, 0.34);
   font-size: 48px;
   font-weight: 300;
@@ -101,7 +99,6 @@ div.well {
 h1.skill {
   display: flex;
   align-items: center;
-
   color: #FFFFFF;
   font-size: 72px;
   letter-spacing: 5px;
@@ -146,11 +143,11 @@ a {
   font-size: 20px;
 }
 
-.active{
+.active {
   color: black;
 }
 
-.div-active{
+.div-active {
   background: #FFFFFF;
 }
 
@@ -163,49 +160,46 @@ a {
 }
 
 @media (max-width: 780px){
-  div.well{
+  div.well {
     font-size: 32px;
   }
 
-  .skill{
+  .skill {
     font-size: 48px;
   }
 
-  div.text{
+  div.text {
     display: flex;
     justify-content: center;
-
     font-size: 14px;
     width: 300px;
   }
 
-  a{
+  a {
     font-size: 14px;
   }
 }
 
 @media (max-width: 530px){
-  div.main{
+  div.main {
     height: 50%;
   }
 
-  div.well{
+  div.well {
     display: flex;
     justify-content: center;
-
     font-size: 24px;
     height: 36px;
   }
 
-  .skill{
+  .skill {
     display: flex;
     justify-content: center;
-
     font-size: 42px;
     margin-bottom: 0;
   }
 
-  div.text{
+  div.text {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -214,42 +208,37 @@ a {
     height: 90px;
   }
 
-  a{
+  a {
     font-size: 14px;
   }
 
-  section{
+  section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-
     top: 14.53%;
     left: 0;
     width: 100%;
+    div {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
   }
 
-  section div{
-    display: flex;
-    justify-content: center;
-
-    width: 100%;
-  }
-
- nav{
+ nav {
    display: flex;
    justify-content: normal;
    flex-direction: row;
-
    width: 55%;
    top: 3%;
    height: 6%;
    left: 45%;
+   div {
+     height: 70%;
+     border-radius: 25px;
+   }
  }
-
-  nav div{
-    height: 70%;
-    border-radius: 25px;
-  }
 
   .auth-block {
     width: 100%;
@@ -259,11 +248,11 @@ a {
     left: 0;
   }
 
-  .active{
+  .active {
     color: $col-m-active;
   }
 
-  div.link{
+  div.link {
     margin-right: 10px;
     width: 90px;
   }

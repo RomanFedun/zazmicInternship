@@ -2,7 +2,9 @@
   <div
     *ngIf="articles$ | async as articles; else loader">
     <div *ngIf="articles.length; else empty">
-      <div class="container"
+      <div
+           [routerLink]="[]"
+           class="container"
            *ngFor="let article of articles">
         <img [src]="[source+article.img.url]"
              height="100%"
